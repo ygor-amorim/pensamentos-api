@@ -1,0 +1,14 @@
+# Binaries
+*.exe
+*.o
+
+# Test artifacts
+test_quotes.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

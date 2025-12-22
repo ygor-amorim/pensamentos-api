@@ -1,0 +1,327 @@
+[
+  {
+    "author": "Karl Marx",
+    "id": 1,
+    "text": "A história se repete, primeiro como tragédia, depois como farsa."
+  },
+  {
+    "author": "Karl Marx",
+    "id": 2,
+    "text": "Os homens fazem a sua própria história, mas não a fazem como querem."
+  },
+  {
+    "author": "Aristóteles",
+    "id": 3,
+    "text": "A dúvida é o princípio da sabedoria."
+  },
+  {
+    "author": "Sócrates",
+    "id": 4,
+    "text": "Só sei que nada sei."
+  },
+  {
+    "author": "Karl Marx",
+    "id": 5,
+    "text": "Tudo o que é sólido desmancha no ar."
+  },
+  {
+    "author": "Martin Heidegger",
+    "id": 6,
+    "text": "A linguagem é a casa do ser."
+  },
+  {
+    "author": "Friedrich Nietzsche",
+    "id": 7,
+    "text": "Não há fatos, apenas interpretações."
+  },
+  {
+    "author": "Friedrich Nietzsche",
+    "id": 8,
+    "text": "O que não me mata me fortalece."
+  },
+  {
+    "author": "George Bernard Shaw",
+    "id": 9,
+    "text": "O poder não corrompe os homens; mas os tolos, quando chegam ao poder, corrompem o poder."
+  },
+  {
+    "author": "John Locke",
+    "id": 10,
+    "text": "Onde não há lei, não pode haver transgressão."
+  },
+  {
+    "author": "Otto von Bismarck",
+    "id": 11,
+    "text": "A política é a arte do possível."
+  },
+  {
+    "author": "Friedrich Nietzsche",
+    "id": 12,
+    "text": "Deus está morto e nós o matamos."
+  },
+  {
+    "author": "Karl Marx",
+    "id": 13,
+    "text": "A religião é o ópio do povo."
+  },
+  {
+    "author": "Karl Marx",
+    "id": 14,
+    "text": "Os filósofos apenas interpretaram o mundo de diversas maneiras; a questão, porém, é transformá-lo."
+  },
+  {
+    "author": "Karl Marx",
+    "id": 15,
+    "text": "Não é a consciência dos homens que determina o seu ser, mas, ao contrário, o seu ser social que determina a sua consciência."
+  },
+  {
+    "author": "Lord Acton",
+    "id": 16,
+    "text": "O poder tende a corromper, e o poder absoluto corrompe absolutamente."
+  },
+  {
+    "author": "Kurt Lewin",
+    "id": 17,
+    "text": "Não há nada mais prático que uma boa teoria."
+  },
+  {
+    "author": "Walter Benjamin",
+    "id": 18,
+    "text": "A massa mantém a verdade, os cultos carregam-na."
+  },
+  {
+    "author": "Theodor Adorno",
+    "id": 19,
+    "text": "Depois de Auschwitz, escrever um poema é um ato de barbárie."
+  },
+  {
+    "author": "Theodor Adorno",
+    "id": 20,
+    "text": "A indústria cultural fornece constantemente o novo que procura, mas na realidade é sempre a mesma."
+  },
+  {
+    "author": "Hannah Arendt",
+    "id": 21,
+    "text": "O mal é banal."
+  },
+  {
+    "author": "Hannah Arendt",
+    "id": 22,
+    "text": "O totalitarismo começa com o desprezo pelo que você tem."
+  },
+  {
+    "author": "Martin Luther King Jr.",
+    "id": 23,
+    "text": "A injustiça em qualquer lugar é uma ameaça à justiça em todo lugar."
+  },
+  {
+    "author": "Guy Debord",
+    "id": 24,
+    "text": "O espetáculo não é um conjunto de imagens, mas uma relação social entre pessoas, mediada por imagens."
+  },
+  {
+    "author": "Guy Debord",
+    "id": 25,
+    "text": "A sociedade do espetáculo é a afirmação onipresente da escolha já feita na produção."
+  },
+  {
+    "author": "Albert Einstein",
+    "id": 26,
+    "text": "A distinção entre passado, presente e futuro é apenas uma ilusão teimosamente persistente."
+  },
+  {
+    "author": "Oscar Wilde",
+    "id": 27,
+    "text": "A verdade é raramente pura e nunca simples."
+  },
+  {
+    "author": "Sócrates",
+    "id": 28,
+    "text": "Conhece a ti mesmo."
+  },
+  {
+    "author": "Sócrates",
+    "id": 29,
+    "text": "A vida não examinada não vale a pena ser vivida."
+  },
+  {
+    "author": "Heráclito",
+    "id": 30,
+    "text": "Tudo flui, nada permanece."
+  },
+  {
+    "author": "Heráclito",
+    "id": 31,
+    "text": "Não podemos entrar duas vezes no mesmo rio."
+  },
+  {
+    "author": "Jorge Amado",
+    "id": 32,
+    "text": "É doce morrer no mar."
+  },
+  {
+    "author": "Jorge Amado",
+    "id": 33,
+    "text": "O mar era a estrada dos pobres, os ricos tinham as estradas de terra."
+  },
+  {
+    "author": "Hermann Hesse",
+    "id": 34,
+    "text": "Eu queria apenas tentar viver aquilo que brotava espontaneamente de mim. Por que isso era tão difícil?"
+  },
+  {
+    "author": "Hermann Hesse",
+    "id": 35,
+    "text": "A ave rompe o ovo. O ovo é o mundo. Quem quer nascer tem que destruir um mundo."
+  },
+  {
+    "author": "Friedrich Nietzsche",
+    "id": 36,
+    "text": "Ninguém pode construir em teu lugar as pontes que precisarás passar, para atravessar o rio da vida."
+  },
+  {
+    "author": "Paul Celan",
+    "id": 37,
+    "text": "A morte da língua é a morte do mundo."
+  },
+  {
+    "author": "Rainer Maria Rilke",
+    "id": 38,
+    "text": "Talvez o melhor que podemos fazer é nos transformar de perguntas a que não têm resposta."
+  },
+  {
+    "author": "Rainer Maria Rilke",
+    "id": 39,
+    "text": "Viva suas perguntas agora. Talvez então, algum dia, sem que você perceba, você as viva até encontrar as respostas."
+  },
+  {
+    "author": "Henri Lefebvre",
+    "id": 40,
+    "text": "A vida cotidiana, no mundo moderno, não é mais vivida, mas representada."
+  },
+  {
+    "author": "Mark Fisher",
+    "id": 41,
+    "text": "O realismo capitalista é a sensação difusa de que não apenas o capitalismo é o único sistema político e econômico viável, mas também que agora é impossível imaginar uma alternativa coerente a ele."
+  },
+  {
+    "author": "Mark Fisher",
+    "id": 42,
+    "text": "É mais fácil imaginar o fim do mundo do que imaginar o fim do capitalismo."
+  },
+  {
+    "author": "Mark Fisher",
+    "id": 43,
+    "text": "A depressão é parcialmente constituída pelo conhecimento de que a situação poderia e deveria ser diferente."
+  },
+  {
+    "author": "Mark Fisher",
+    "id": 44,
+    "text": "Aqueles que não conseguem lembrar o passado estão condenados a tê-lo revendido a eles para sempre."
+  },
+  {
+    "author": "Anne Carson",
+    "id": 45,
+    "text": "O mito é uma linguagem. A linguagem não pode ser reduzida à retórica."
+  },
+  {
+    "author": "Anne Carson",
+    "id": 46,
+    "text": "Palavras nos libertam das coisas que sabemos de qualquer maneira."
+  },
+  {
+    "author": "Susan Sontag",
+    "id": 47,
+    "text": "Interpretar é empobrecer, esvaziar o mundo."
+  },
+  {
+    "author": "Susan Sontag",
+    "id": 48,
+    "text": "O fotográfico transforma o mundo num objeto."
+  },
+  {
+    "author": "Cormac McCarthy",
+    "id": 49,
+    "text": "Ele sabia apenas que seu filho estava no mundo, respirando em algum lugar, e que aquilo era razão suficiente para continuar."
+  },
+  {
+    "author": "Cormac McCarthy",
+    "id": 50,
+    "text": "As sombras do mundo são lançadas por sua opacidade."
+  },
+  {
+    "author": "Haruki Murakami",
+    "id": 51,
+    "text": "A dor é inevitável. O sofrimento é opcional."
+  },
+  {
+    "author": "Haruki Murakami",
+    "id": 52,
+    "text": "Se você só lê os livros que todos estão lendo, só pode pensar o que todos estão pensando."
+  },
+  {
+    "author": "Rosa Luxemburgo",
+    "id": 53,
+    "text": "Liberdade só é possível quando os prisioneiros começam a pensar que são livres."
+  },
+  {
+    "author": "Rosa Luxemburgo",
+    "id": 54,
+    "text": "Quem não se movimenta não sente as correntes que o prendem."
+  },
+  {
+    "author": "Stanisław Lem",
+    "id": 55,
+    "text": "Não sabemos o que podemos ser."
+  },
+  {
+    "author": "Stanisław Lem",
+    "id": 56,
+    "text": "O futuro é vago, o presente fugidio, o passado está cristalizado."
+  },
+  {
+    "author": "Kurt Vonnegut",
+    "id": 57,
+    "text": "Tudo estava lindo, e nada doía."
+  },
+  {
+    "author": "Kurt Vonnegut",
+    "id": 58,
+    "text": "Assim vai."
+  },
+  {
+    "author": "Eduardo Galeano",
+    "id": 59,
+    "text": "Cada pessoa brilha com sua própria luz. Não há duas chamas iguais."
+  },
+  {
+    "author": "Eduardo Galeano",
+    "id": 60,
+    "text": "A utopia está no horizonte. Me aproximo dois passos, ela se afasta dois passos. Caminho dez passos e o horizonte corre dez passos. Por mais que eu caminhe, jamais alcançarei. Para que serve a utopia? Serve para isso: para que eu não deixe de caminhar."
+  },
+  {
+    "author": "Eduardo Galeano",
+    "id": 61,
+    "text": "Somos o que lembramos. Se não lembramos de nada, somos nada."
+  },
+  {
+    "author": "Eduardo Galeano",
+    "id": 62,
+    "text": "A história oficial é contada pelos caçadores. Algum dia será contada pelos coelhos."
+  },
+  {
+    "author": "Emily Brontë",
+    "id": 63,
+    "text": "Seja qual for a alma que habitasse em mim, ela foi uma selvagem."
+  },
+  {
+    "author": "Emily Brontë",
+    "id": 64,
+    "text": "Ele é mais eu do que eu sou. Seja qual for a matéria de que as almas são feitas, a minha e a dele são a mesma."
+  },
+  {
+    "author": "Tester",
+    "id": 65,
+    "text": "Integration test quote"
+  }
+]
