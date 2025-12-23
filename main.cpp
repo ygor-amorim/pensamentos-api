@@ -49,15 +49,23 @@ int main() {
     // ---------------------
     // GET /quotes
     // GET /quotes?author=X
+    // GET /quotes?tag=Y
     // ---------------------
     server.Get("/quotes", [&store](const httplib::Request& req, httplib::Response& res) {
         std::vector<Quote> quotes;
 
+        // Check if there's a "tag" query parameter
+        if (req.has_param("tag")) {
+            std::string tag = req.get_param_value("tag");
+            quotes = store.get_by_tag(tag);
+        }
         // Check if there's an "author" query parameter
-        if (req.has_param("author")) {
+        else if (req.has_param("author")) {
             std::string author = req.get_param_value("author");
             quotes = store.get_by_author(author);
-        } else {
+        }
+        // No parameters: return all quotes
+        else {
             quotes = store.get_all();
         }
 
@@ -203,6 +211,7 @@ int main() {
     std::cout << "  GET    /quotes?author=X - Filter by author\n";
     std::cout << "  GET    /quotes/random   - Get random quote\n";
     std::cout << "  GET    /quotes/:id      - Get quote by ID\n";
+    std::cout << "  GET    /quotes?tag=Y    - Filter by tag\n";
     std::cout << "  POST   /quotes          - Create quote\n";
     std::cout << "  PUT    /quotes/:id      - Update quote\n";
     std::cout << "  DELETE /quotes/:id      - Delete quote\n";

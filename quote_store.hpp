@@ -75,6 +75,33 @@ public:
         }
         return result;
     }
+    // GET /quotes?tag=X - filter by tag (case-insensitive exact match)
+    std::vector<Quote> get_by_tag(const std::string& tag) const {
+        std::shared_lock lock(mutex_); // As on previous method
+        std::vector<Quote> result;
+
+        // Convert search term to lowercase for case-insensitive matching
+        std::string tag_lower = tag;
+        std::transform (tag_lower.begin(), tag_lower.end(),
+                       tag_lower.begin(), ::tolower);
+
+        // Loop through quotes
+        for (const auto& q : quotes_) {
+            // Check if quote has the specified tag
+            for (const auto& quote_tag : q.tags) {
+                std::string quote_tag_lower = quote_tag;
+                std::transform(quote_tag_lower.begin(), quote_tag_lower.end(),
+                               quote_tag_lower.begin(), ::tolower);
+
+            // if matching tag is found, add quote to results
+            if (quote_tag_lower == tag_lower) {
+                result.push_back(q);
+                break; // no need to check other tags for this quote
+            }
+            }
+        }
+        return result;
+    }
 
     // GET /quotes/random - return a random quote
     std::optional<Quote> get_random() const {
