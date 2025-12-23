@@ -86,6 +86,20 @@ test_endpoint "GET /quotes?author=marx (filter)" "200" "GET" "/quotes?author=mar
 echo ""
 
 # ==========================================
+# Tag Filter Tests
+# ==========================================
+echo -e "${YELLOW}--- Tag Filter Endpoints ---${NC}"
+
+test_endpoint "GET /quotes?tag=marxismo returns quotes" "200" "GET" "/quotes?tag=marxismo" "" "Marx"
+test_endpoint "GET /quotes?tag=FILOSOFIA (case-insensitive)" "200" "GET" "/quotes?tag=FILOSOFIA"
+test_endpoint "GET /quotes?tag=teoria-critica (hyphenated)" "200" "GET" "/quotes?tag=teoria-critica"
+test_endpoint "GET /quotes?tag=nonexistent returns empty array" "200" "GET" "/quotes?tag=nonexistent" "" "\[\]"
+test_endpoint "GET /quotes?tag= (empty) returns empty array" "200" "GET" "/quotes?tag=" "" "\[\]"
+test_endpoint "GET /quotes?tag=filosofia&author=marx (tag takes precedence)" "200" "GET" "/quotes?tag=filosofia&author=marx"
+
+echo ""
+
+# ==========================================
 # POST Tests
 # ==========================================
 echo -e "${YELLOW}--- POST Endpoints ---${NC}"

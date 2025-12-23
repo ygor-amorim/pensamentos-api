@@ -154,3 +154,61 @@ TEST_CASE_FIXTURE(TestFixture, "QuoteStore - ID continuity after reload") {
         CHECK(created.id == 3);  // Should continue from highest ID
     }
 }
+
+TEST_CASE("QuoteStore - Filter by tag") {
+    // Create a test file with pre-populated tags
+    std::string tag_test_file = "test_quotes_tags.json";
+
+    // Setup: Create JSON with tagged quotes
+    {
+        std::ofstream file(tag_test_file);
+        file << R"([
+            {"id": 1, "text": "Quote about philosophy", "author": "Author1", "tags": ["filosofia", "epistemologia"]},
+            {"id": 2, "text": "Quote about politics", "author": "Author2", "tags": ["politica", "historia"]},
+            {"id": 3, "text": "Quote about critical theory", "author": "Author3", "tags": ["teoria-critica", "filosofia"]},
+            {"id": 4, "text": "Quote with no tags", "author": "Author4", "tags": []}
+        ])";
+    }
+
+    QuoteStore store(tag_test_file);
+
+    SUBCASE("Filter by existing tag") {
+        auto results = store.get_by_tag("filosofia");
+        CHECK(results.size() == 2);
+    }
+
+    SUBCASE("Filter by hyphenated tag") {
+        auto results = store.get_by_tag("teoria-critica");
+        CHECK(results.size() == 1);
+        CHECK(results[0].author == "Author3");
+    }
+
+    SUBCASE("Case-insensitive tag search") {
+        auto results = store.get_by_tag("FILOSOFIA");
+        CHECK(results.size() == 2);
+    }
+
+    SUBCASE("Mixed case tag search") {
+        auto results = store.get_by_tag("FiLoSoFiA");
+        CHECK(results.size() == 2);
+    }
+
+    SUBCASE("Non-existent tag returns empty") {
+        auto results = store.get_by_tag("nonexistent");
+        CHECK(results.empty());
+    }
+
+    SUBCASE("Empty tag returns empty") {
+        auto results = store.get_by_tag("");
+        CHECK(results.empty());
+    }
+
+    SUBCASE("Tag with single match") {
+        auto results = store.get_by_tag("historia");
+        CHECK(results.size() == 1);
+        CHECK(results[0].id == 2);
+    }
+
+    // Cleanup
+    std::filesystem::remove(tag_test_file);
+}
